@@ -1,39 +1,306 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parallax Template - Materialize</title>
 
-    <title>KODE IT SOLUTIONS</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-light bg-light"></nav>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="css/flickity.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script src="js/flickity.pkgd.js"></script>
+</head>
+
+<body>
+  <!-- nav bar  -->
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">TownScript</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="btn z-depth-0 blue darken-4">Create Event</a></li>
+      </ul>
+
+      <!-- nav for mobile -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="https://materializecss.com/images/office.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="https://materializecss.com/images/yuna.jpg"></a>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- nav ends -->
+
+  <!-- Banner Section -->
+
+  <div class="hero">
+    <form class="search">
+      <input type="text" class="browser-default" placeholder="seach books by isbn, title, author">
+      <button type="submit" class="btn-large z-depth-0">
+        <i class="material-icons left">search</i>
+        <span class="">search</span>
+      </button>
+    </form>
+  </div>
+
+
+  <!-- banner section ends -->
+
+  <!-- Filter Section  -->
+
+  <div class="section teal lighten-5">
     <div class="container">
-    <h1>WEB DEV TEAM</h1>
+      <h4 class="">
+        Flter Events
+      </h4>
 
-    <!-- Append Your Name To UL --->
-    <ul>
-        <li>Sushil Bhardwaj</li>    
-        <li>Diven Gardas</li>
-        <li>Reena Joseph</li>
-        <li>Yashshree Shinde</li>
-        <li>Gauri Ramnavamiwale</li>
-        <li>Pritee Chaugule </li>
-        <li>Rutuja Malpute</li>
-        <li>Garvita Jain</li>
-        <li>Sara Saeed Shaikh</li>
-        <li>Fatema Katawala</li>
-    </ul>
+
+      <div class="row">
+        <div class="input-field col s12 m3 l3">
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Select Location</label>
+        </div>
+
+        <div class="input-field col s12 m3 l3">
+          <input type="text" class="datepicker" placeholder="pick date">
+        </div>
+
+        <div class="input-field col s12 m3 l3">
+          <!-- <button class="btn" style="width:100%">Find Event</button> -->
+          <a class="waves-effect waves-light btn"><i class="material-icons left">search</i>search</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- finter section ends -->
+
+  <!-- cards section  -->
+
+  <div class="container">
+
+    <div class="section">
+      <div class="flex">
+        <h4>Most Recent Events</h4>
+        <a href="#">View all</a>
+      </div>
+      <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity='{ "groupCells": true, "cellAlign": "left" }'>
+        <div class="carousel-cell">
+          <img
+            src="https://ts-production.imgix.net/images/mobile-cover-uploaded/894ed8f2-ca5c-4929-ae24-faf7fbd3d9c0.jpg?auto=compress,format&w=375&h=200">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+
+      </div>
 
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="flex">
+        <h4>Most Recent Events</h4>
+        <a href="#">View all</a>
+      </div>
+      <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity='{ "groupCells": true, "cellAlign": "left" }'>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="background1.jpg">
+          <div class="body">
+            <div class="title">Marathon 2020</div>
+            <div>May 24 | Mumbai</div>
+            <p class="price">
+              &#8377; 199 onwords
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+            full time job. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
 </html>
