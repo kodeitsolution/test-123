@@ -39,7 +39,7 @@ section {
 }
 a {
   text-decoration: none !important;
-}
+}b
 .cover-pic {
   margin: -24px -24px -89px -24px;
 }
@@ -9175,13 +9175,13 @@ a:focus {
 .sidebar .nav-item .nav-link .badge-counter,
 .topbar .nav-item .nav-link .badge-counter {
   position: absolute;
-  transform: scale(0.7);
+  transform: scale(0.7);ba
   transform-origin: top right;
   right: 0.25rem;
   margin-top: -0.25rem;
 }
 .sidebar .nav-item .nav-link .img-profile,
-.topbar .nav-item .nav-link .img-profile {
+ .nav-item .nav-link .img-profile {
   height: 2rem;
   width: 2rem;
 }
