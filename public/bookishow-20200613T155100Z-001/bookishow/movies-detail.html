@@ -7,97 +7,228 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <link rel="icon" type="image/png" href="img\logo-icon.png">
-      <title>Bookishow - Movies, Events, Sports Website HTML Template</title>
+      <title>Bookishow</title>
       <!-- Slick Slider -->
       <link rel="stylesheet" type="text/css" href="vendor\slick\slick.min.css">
       <link rel="stylesheet" type="text/css" href="vendor\slick\slick-theme.min.css">
       <!-- Custom fonts for this template-->
       <link href="vendor\fontawesome-free\css\all.min.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet">
       <!-- Custom styles for this template-->
       <link href="css\osahan.min.css" rel="stylesheet">
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
    </head>
    <body id="page-top">
       <!-- Page Wrapper -->
       <div id="wrapper">
-         <!-- Sidebar -->
-         <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-               <div class="sidebar-brand-icon">
-                  <img src="img\logo-icon.png" alt="">
-               </div>
-               <div class="sidebar-brand-text mx-3"><img src="img\logo.png" alt=""></div>
-            </a>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-               <a class="nav-link" href="movies.html">
+            <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+         <!-- Sidebar - Brand -->
+         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <div class="sidebar-brand-icon">
+               <img src="img\logo-icon.png" alt="">
+            </div>
+            <div class="sidebar-brand-text mx-3"><img src="img\logo.png" alt=""></div>
+         </a>
+         <!-- Nav Item - Dashboard -->
+         <li class="nav-item">
+            <a class="nav-link" href="Login.html">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Login</span></a>
+         </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="index.html">
                <i class="fas fa-fw fa-film"></i>
-               <span>Movies</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="events.html">
-               <i class="fas fa-fw fa-glass-cheers"></i>
-               <span>Events</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="people.html">
-               <i class="fas fa-fw fa-users"></i>
-               <span>People</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="sports.html">
-               <i class="fas fa-fw fa-futbol"></i>
-               <span>Sports</span></a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <!-- Heading -->
-            <div class="sidebar-heading">Extra</div>
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-               <i class="fas fa-fw fa-pager"></i>
-               <span>Pages</span>
-               </a>
-               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                     <h6 class="collapse-header">All Pages</h6>
-                     <a class="collapse-item" href="movies.html">Movies</a>
-                     <a class="collapse-item" href="movies-detail.html">Movie Detail</a>
-                     <a class="collapse-item" href="events.html">Events</a>
-                     <a class="collapse-item" href="events-detail.html">Event Detail</a>
-                     <a class="collapse-item" href="people.html">People</a>
-                     <a class="collapse-item" href="people-detail.html">People Detail</a>
-                     <a class="collapse-item" href="sports.html">Sports</a>
-                     <a class="collapse-item" href="sports-detail.html">Sport Detail</a>
-                  </div>
+               <span>Chennai</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa-film"></i>
+               <span>Delhi</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-users"></i>
+            <i class="fas fa-fw fa-film"></i>
+            <span>Kolkata</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-glass-cheers"></i>
+            <i class="fas fa-fw fa-film"></i>
+            <span>Mumbai</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-futbol"></i>
+            <i class="fas fa-fw fa-film"></i>
+            <span>Pune</span></a>
+         </li> -->
+         <!-- Divider -->
+         <!-- <hr class="sidebar-divider"> -->
+         <!-- Heading -->
+         <!-- <div class="sidebar-heading">Extra</div> -->
+         <!-- Nav Item - Pages Collapse Menu -->
+         <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-pager"></i>
+            <span>Collections</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+               <div class="bg-white py-2 collapse-inner rounded">
+                  <h6 class="collapse-header">All Categories</h6>
+                  <a class="collapse-item" href="events.html">Online</a>
+                  <a class="collapse-item" href="events.html">Entertainment</a>
+                  <a class="collapse-item" href="events.html">Education & Learning</a>
+                  <a class="collapse-item" href="events.html">Tech</a>
+                  <a class="collapse-item" href="events.html">Sports & Fitness</a>
+                  <a class="collapse-item" href="events.html">Biz & Networking</a>
+                  <a class="collapse-item" href="events.html">Travel & Adventure</a>
+                  <a class="collapse-item" href="events.html">Social Cause</a>
+                  <a class="collapse-item" href="events.html">Others</a>
                </div>
+            </div>
             </li>
+           
             <li class="nav-item">
-               <a class="nav-link" href="offers.html">
-               <i class="fas fa-fw fa-fire"></i>
-               <span>Offers</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-               <i class="fas fa-fw fa-clone"></i>
-               <span>Extra Pages</span>
+               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+               <i class="fas fa-fw fa-list-alt"></i>
+               <span>My Events</span>
                </a>
-               <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                     <h6 class="collapse-header">Login Screens:</h6>
-                     <a class="collapse-item" href="login.html">Login</a>
-                     <a class="collapse-item" href="register.html">Register</a>
-                     <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                     <div class="collapse-divider"></div>
-                     <h6 class="collapse-header">Other Pages:</h6>
-                     <a class="collapse-item" href="404.html">404 Page</a>
-                     <a class="collapse-item" href="blank.html">Blank Page</a>
-                  </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+               <div class="bg-white py-2 collapse-inner rounded">
+                  <h6 class="collapse-header">EVENTS</h6>
+                  <a class="collapse-item" href="created_Event.html">Created Events</a>
+                  <a class="collapse-item" href="joined_Event.html">Joined Events</a>
                </div>
-            </li>
-         </ul>
-         <!-- End of Sidebar -->
+            </div>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+               <i class="fas fa-film fa-fw mr-2"></i><span>City</span>
+               <!-- Counter - Alerts -->
+               <!-- <span class="badge badge-danger badge-counter">8+</span> -->
+            </a>
+               <div id="collapsefour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
+                  <div class="bg-white py-2 collapse-inner rounded ">
+                     <h6 class="collapse-header shadow animated--grow-in">Cities</h6>
+                     <a class="collapse-item" href="events.html">
+                        <div class="mr-3">
+                           <div class="icon-circle bg-primary text-white">
+                              B
+                           </div>
+                        </div>
+                        <div>
+                           <!-- <div class="small text-gray-500">December 12, 2019</div> -->
+                           <span class="font-weight-bold">Bangaluru
+                           </span>
+                        </div>
+                     </a>
+                     <a class="collapse-item" href="events.html">
+                         <!-- <div class="dropdown-list-image mr-3">
+                     <img class="rounded-circle w-60" src="img\s1.png" alt="">
+                     <div class="status-indicator bg-success"></div>
+                  </div> -->
+                  <div class="mr-3">
+                     <div class="icon-circle bg-info text-white">
+                        C
+                     </div>
+                  </div>
+                  <div>
+                     <div class="text-truncate font-weight-bold">Chennai</div>
+                     <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
+                  </div>
+                     </a>
+                     <a class="collapse-item" href="events.html">
+                        <!-- <div class="dropdown-list-image mr-3">
+                     <img class="rounded-circle w-60" src="img\s2.png" alt="">
+                     <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                     <div class="text-truncate">Pellentesque euismod diam sit amet nibh molestie, imperdiet feugiat mi feugiat.</div>
+                     <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div> -->
+                  <div class="mr-3">
+                     <div class="icon-circle bg-danger text-white">
+                        D
+                     </div>
+                  </div>
+                  <div>
+                     <div class="text-truncate font-weight-bold">Delhi</div>
+                     <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
+                  </div>
+                     </a>
+                     <a class="collapse-item" href="events.html">
+                        <div class="mr-3">
+                           <div class="icon-circle bg-success text-white">
+                              K
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-truncate font-weight-bold">Kolkata</div>
+                           <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
+                        </div> 
+                     </a>
+                     <a class="collapse-item" href="events.html">
+                        <div class="mr-3">
+                           <div class="icon-circle bg-warning text-white">
+                              M
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-truncate font-weight-bold">Mumbai</div>
+                           <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
+                        </div>
+                     </a>
+                     <a class="collapse-item" href="events.html">
+                        <div class="mr-3">
+                           <div class="icon-circle bg-secondary text-white">
+                              P
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-truncate font-weight-bold">Pune</div>
+                           <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
+                        </div>
+                     </a>
+                     <a class="dropdown-item text-center small text-gray-500" href="#">Show All Cities</a>
+                  </div>
+               </li>
+              
+              
+         <li class="nav-item">
+            <a class="nav-link" href="offers.html">
+            <i class="fas fa-fw fa-fire"></i>
+            <span class="badge badge-danger bg-gradient-danger">NEW</span>
+            <span>Offers</span></a>
+         </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-clone"></i>
+            <span>Extra Pages</span>
+            </a>
+            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+               <div class="bg-white py-2 collapse-inner rounded">
+                  <h6 class="collapse-header">Login Screens:</h6>
+                  <a class="collapse-item" href="login.html">Login</a>
+                  <a class="collapse-item" href="register.html">Register</a>
+                  <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                  <div class="collapse-divider"></div>
+                  <h6 class="collapse-header">Other Pages:</h6>
+                  <a class="collapse-item" href="404.html">404 Page</a>
+                  <a class="collapse-item" href="blank.html">Blank Page</a>
+               </div>
+            </div>
+         </li> -->
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-question-circle"></i>
+            <span>Help</span></a>
+         </li>
+      </ul>
+      <!-- End of Sidebar -->
          <!-- Content Wrapper -->
          <div id="content-wrapper" class="d-flex flex-column">
             <!-- Main Content -->
@@ -105,7 +236,7 @@
                <!-- Topbar -->
                <nav class="navbar navbar-expand navbar-dark topbar mb-4 pl-0 static-top shadow">
                   <!-- Sidebar Toggle (Topbar) -->
-                  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                  <button id="sidebarToggleTop" class="btn btn-link mr-3">
                   <i class="fa fa-bars"></i>
                   </button>
                   <!-- Topbar Search -->
@@ -140,96 +271,118 @@
                            </form>
                         </div>
                      </li>
+                     <!-- city Name -->
+                     <!-- <li class="nav-item no-arrow mx-1">
+                        <a class="nav-link" href="index.html">
+                           <i style="padding-right: 2rem; font-size:larger;" class="fas fa-fw fa-film"></i>
+                           <h4>Bengaluru</h4>
+                        </a>
+                     </li> -->
                      <!-- Nav Item - Alerts -->
-                     <li class="nav-item no-arrow mx-1">
+                     <!-- <li class="nav-item no-arrow mx-1">
                         <a class="nav-link" href="offers.html">
                            <i class="fas fa-fire fa-fw"></i>
-                           <!-- Counter - Alerts -->
+                           Counter - Alerts
                            <span class="badge badge-danger bg-gradient-danger">NEW</span>
                         </a>
-                     </li>
+                     </li> -->
                      <li class="nav-item dropdown no-arrow mx-1">
                         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <i class="fas fa-bell fa-fw"></i>
+                           <i class="fas fa-film fa-fw mr-2"></i><span>city</span>
                            <!-- Counter - Alerts -->
-                           <span class="badge badge-danger badge-counter">8+</span>
+                           <!-- <span class="badge badge-danger badge-counter">8+</span> -->
                         </a>
-                        <!-- Dropdown - Alerts -->
+                        <!-- Dropdown - Alerts // notification-->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                            <h6 class="dropdown-header">
-                              Alerts
+                              Cities
                            </h6>
                            <a class="dropdown-item d-flex align-items-center" href="#">
                               <div class="mr-3">
                                  <div class="icon-circle bg-primary text-white">
-                                    KN
+                                    B
                                  </div>
                               </div>
                               <div>
-                                 <div class="small text-gray-500">December 12, 2019</div>
-                                 <span class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 <!-- <div class="small text-gray-500">December 12, 2019</div> -->
+                                 <span class="font-weight-bold">Bangaluru
                                  </span>
                               </div>
                            </a>
                            <a class="dropdown-item d-flex align-items-center" href="#">
-                              <div class="dropdown-list-image mr-3">
+                              <!-- <div class="dropdown-list-image mr-3">
                                  <img class="rounded-circle w-60" src="img\s1.png" alt="">
                                  <div class="status-indicator bg-success"></div>
+                              </div> -->
+                              <div class="mr-3">
+                                 <div class="icon-circle bg-info text-white">
+                                    C
+                                 </div>
                               </div>
                               <div>
-                                 <div class="text-truncate">Duis vel est sit amet ipsum egestas efficitur.</div>
-                                 <div class="small text-gray-500">Gurdeep Osahan · 58m</div>
+                                 <div class="text-truncate font-weight-bold">Chennai</div>
+                                 <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
                               </div>
                            </a>
                            <a class="dropdown-item d-flex align-items-center" href="#">
-                              <div class="dropdown-list-image mr-3">
+                              <!-- <div class="dropdown-list-image mr-3">
                                  <img class="rounded-circle w-60" src="img\s2.png" alt="">
                                  <div class="status-indicator"></div>
                               </div>
                               <div>
                                  <div class="text-truncate">Pellentesque euismod diam sit amet nibh molestie, imperdiet feugiat mi feugiat.</div>
                                  <div class="small text-gray-500">Jae Chun · 1d</div>
-                              </div>
-                           </a>
-                           <a class="dropdown-item d-flex align-items-center" href="#">
-                              <div class="dropdown-list-image mr-3">
-                                 <img class="rounded-circle w-60" src="img\s3.png" alt="">
-                                 <div class="status-indicator bg-warning"></div>
+                              </div> -->
+                              <div class="mr-3">
+                                 <div class="icon-circle bg-danger text-white">
+                                    D
+                                 </div>
                               </div>
                               <div>
-                                 <div class="text-truncate">Quisque ac justo bibendum nunc fringilla pharetra nec sit amet mauris.</div>
-                                 <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                 <div class="text-truncate font-weight-bold">Delhi</div>
+                                 <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
                               </div>
                            </a>
                            <a class="dropdown-item d-flex align-items-center" href="#">
                               <div class="mr-3">
-                                 <div class="icon-circle bg-success">
-                                    <i class="fas fa-donate text-white"></i>
+                                 <div class="icon-circle bg-success text-white">
+                                    K
                                  </div>
                               </div>
                               <div>
-                                 <div class="small text-gray-500">December 7, 2019</div>
-                                 Sed aliquet nibh nec odio congue, in condimentum massa dapibus.
+                                 <div class="text-truncate font-weight-bold">Kolkata</div>
+                                 <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
                               </div>
                            </a>
                            <a class="dropdown-item d-flex align-items-center" href="#">
                               <div class="mr-3">
-                                 <div class="icon-circle bg-warning">
-                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                 <div class="icon-circle bg-warning text-white">
+                                    M
                                  </div>
                               </div>
                               <div>
-                                 <div class="small text-gray-500">December 2, 2019</div>
-                                 Pellentesque sit amet nunc consectetur, porta sapien a, bibendum dolor.
+                                 <div class="text-truncate font-weight-bold">Mumbai</div>
+                                 <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
                               </div>
                            </a>
-                           <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                           <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="mr-3">
+                                 <div class="icon-circle bg-secondary text-white">
+                                    P
+                                 </div>
+                              </div>
+                              <div>
+                                 <div class="text-truncate font-weight-bold">Pune</div>
+                                 <!-- <div class="small text-gray-500">Gurdeep Osahan · 58m</div> -->
+                              </div>
+                           </a>
+                           <a class="dropdown-item text-center small text-gray-500" href="#">Show All Cities</a>
                         </div>
                      </li>
                      <!-- Nav Item - User Information -->
                      <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Askbootstrap</span>
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">User Name</span>
                         <img class="img-profile rounded-circle" src="img\s4.png">
                         </a>
                         <!-- Dropdown - User Information -->
@@ -259,8 +412,8 @@
                      </li>
                   </ul>
                </nav>
-               <!-- End of Topbar -->
-               <!-- Begin Page Content -->
+               <!-- End of Topbar -->             
+                 <!-- Begin Page Content -->
                <div class="container-fluid">
                   <div class="row">
                      <div class="col-xl-12 col-lg-12">
