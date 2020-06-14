@@ -1,0 +1,131 @@
+/* @media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+} */
+
+/* display 3 */
+/* @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+} */
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  /* width: 28%; */
+  width: 150px;
+  height: 200px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  /* background: #ED2; */
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: table-column;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-image {
+  display: block;
+  height: 200px;
+  /* set min-width,
+     allow images to determine cell width */
+  min-width: 150px;
+  max-width: 100%;
+  /* margin-right: 10px; */
+  /* vertically center */
+  top: 10%;
+  transform: translateY(-0%)
+}
+
+.carousel.is-fullscreen .carousel-image {
+  height: auto;
+  max-height: 100%;
+}
+
+.bottom_nav{
+  width:100%;
+  background:rgb(55, 50, 80);
+  margin:0px;
+  position:relative;
+}
+
+.navbar-nav .bottom_nav_1{
+  width:100%;
+   list-style-type:none;
+   height:45%;
+   margin-right:0;
+   padding:0 50px;
+ }
+.nav-item.item1{
+   width:10%;
+   padding-right:0px;
+}
+
+.bottom_nav ul li{
+  display:inline-block;
+  position: absolute;
+  width: 5%;
+}
+.
+.bottom_nav ul li a{
+  color:white;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-size:12px;
+}
+ .topmargin{
+   margin-top:-1.5rem;
+   margin-bottom:1.5rem;
+ }
+ .navbar-bottom{
+
+   margin-top:-1.5rem;
+   margin-bottom:1.5rem;
+   background:rgb(55, 50, 80); 
+ }
+
+ 
+ 
+
